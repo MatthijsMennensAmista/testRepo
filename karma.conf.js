@@ -1,19 +1,14 @@
-module.exports = function (config) {
-	config.set({
-		client: {
-			openui5: {
-				config: {
-					theme: "sap_belize",
-					language: "EN",
-					resourceRoots: {
-						"be.amista.TravisTest": "./",
-						"test": "./test"
-					}
-				},
-				tests: [
-					"test/integration/AllJourneys"
-				]
-			}
-		}
-	});
+module.exports = function(config) {
+  config.set({
+
+    frameworks: ["ui5"],
+
+    ui5: {
+      url: "https://openui5.hana.ondemand.com",
+	  mode: "html",
+	  testpage: "webapp/test/integration/opaTests.qunit.html"
+	},
+	browsers: ["ChromeHeadless"],
+    singleRun: true
+  });
 };
