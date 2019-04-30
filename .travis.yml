@@ -1,2 +1,6 @@
 sudo: required
 language: node_js
+before_script:
+  - npm install -g karma-cli
+  - npm install --save-dev karma karma-ui5
+  - npm install --save-dev karma-chrome-launcher
