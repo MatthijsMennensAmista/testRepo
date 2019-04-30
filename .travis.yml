@@ -1,6 +1,2 @@
 language: node_js
-jobs:
-include:
-    - stage: "Tests"               
-      name: "Unit Tests"            
-      script: /webapp/test/integration/opaTests.qunit
+script: /webapp/test/integration/opaTests.qunit
