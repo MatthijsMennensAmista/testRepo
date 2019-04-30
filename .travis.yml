@@ -1,4 +1,5 @@
 language: node_js
+install: npm install
 before_install:
   - chmod +x ./webapp/test/integration/opaTests.qunit.js
 script: ./webapp/test/integration/opaTests.qunit.js
