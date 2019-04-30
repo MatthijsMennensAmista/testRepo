@@ -1,4 +1,2 @@
+sudo: required
 language: node_js
-"scripts": {
-  "test": karma start
-},
