@@ -3,11 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "private": true,
-  "devDependencies": {
-    "karma": "^2.0.0",
-	"karma-chrome-launcher": "^2.2.0"
-  },
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "test": "karma start"
   }
 }
