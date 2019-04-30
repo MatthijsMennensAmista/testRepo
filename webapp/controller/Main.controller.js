@@ -24,6 +24,10 @@ sap.ui.define([
 				break;
 			}
 			this.byId("idResult").setText(result);
+		}, 
+		
+		onInit: function(){
+			sap.m.MessageToast.show("init");
 		}
 	});
 });
