@@ -5,25 +5,22 @@ sap.ui.define([
 
 	return Controller.extend("be.amista.TravisTest.controller.Main", {
 		onCalculate: function () {
-			var result = 0;
 			var type = this.byId("idType").getSelectedKey();
 			var input1 = parseInt(this.byId("idInput1").getValue(), 0);
 			var input2 = parseInt(this.byId("idInput2").getValue(), 0);
+			this.byId("idResult").setText(this.getResult(type, input1, input2));
+		},
+		getResult: function (type, v1, v2) {
 			switch (type) {
-			case "add":
-				result = input1 + input2;
-				break;
 			case "subtract":
-				result = input1 - input2;
-				break;
+				return v1 - v2;
 			case "multiply":
-				result = input1 * input2;
-				break;
+				return v1 * v2;
 			case "divide":
-				result = input1 / input2;
-				break;
+				return v1 / v2;
+			default:
+				return v1 + v2;
 			}
-			this.byId("idResult").setText(result);
 		}
 	});
 });
