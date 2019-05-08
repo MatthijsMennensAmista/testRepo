@@ -10,7 +10,6 @@ sap.ui.define([
 			var input2 = parseInt(this.byId("idInput2").getValue(), 0);
 			this.byId("idResult").setText(this.getResult(type, input1, input2));
 		},
-		
 		getResult: function (type, v1, v2) {
 			switch (type) {
 			case "subtract":
